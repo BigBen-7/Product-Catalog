@@ -1,0 +1,104 @@
+.container {
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1388px;
+  /* width: 100%; */
+  margin: auto;
+}
+
+.product-heading h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.card-container {
+  width: 15rem;
+  border-radius: 1rem;
+  background: #e0e0e0;
+  box-shadow: -21px 21px 42px #8f8f8f, 21px -21px 42px #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  height: fit-content;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.card-title {
+  font-size: 18px;
+  margin: 0.5rem 5%;
+  text-align: center;
+}
+.card-price {
+  font-size: 18px;
+  margin: 0.5rem 5%;
+  text-align: end;
+  font-weight: 900;
+}
+.card-btn {
+  align-items: center;
+  background-color: transparent;
+  color: #8a2be2;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+}
+
+button:before {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+
+button:hover:before {
+  background-color: #000;
+  width: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-container {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+  }
+
+  .card-title,
+  .card-price {
+    text-align: center; /* Center text for better readability on smaller screens */
+  }
+}

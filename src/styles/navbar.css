@@ -1,0 +1,18 @@
+.navbar {
+  color: #8a2be2;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 2rem;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  background-color: #e6e4dd;
+}
